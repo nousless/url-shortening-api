@@ -51,9 +51,6 @@ h1{
 }
 h2{
   font-size:34px;
-  margin-top:100px;
-  margin-bottom:10px;
-
 }
 h3{
   font-size:18px;
@@ -170,6 +167,10 @@ header {
   width:25%;
   margin:40px auto;
 }
+.statisticsAnotation h2{
+  margin-top:100px;
+  margin-bottom:10px;
+}
 .cardContainer{
   position: relative;
   flex-wrap: wrap;
@@ -230,4 +231,21 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.02);
 }
 
 /* BOOST LINKS */
+
+.boostLinks{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  width:100%;
+  height:230px;
+  background:#3B3054;
+  background-image: url('../images/bg-boost-desktop.svg');
+  background-size:cover;
+}
+.boostLinks h2{
+  padding-bottom:30px;
+  color:white;
+}
 
