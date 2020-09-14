@@ -5,12 +5,10 @@
   padding: 0;
   
 }
-p {
-  color: hsl(0, 0%, 75%);
+p, ::placeholder {
+  color: #afafb7
 }
-::placeholder {
-  color: hsl(0, 0%, 75%);
-}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -29,6 +27,7 @@ a:hover, a:active{
 }
 .section {
   margin:2% auto;
+  margin-bottom:0;
 }
 button {
   font-weight: 700;
@@ -43,14 +42,27 @@ button:hover{
   opacity: 0.5;
   cursor:pointer;
 }
+h1, h2, h3{
+  color:rgb(52, 49, 58);
+}
+h1{
+  font-size:78px;
+  line-height: 6rem;
+}
+h2{
+  font-size:34px;
+  margin-top:100px;
+  margin-bottom:10px;
 
+}
+h3{
+  font-size:18px;
+}
 /* HEADER */
 header {
-  margin:20px;
-  width: 1440px;
+  width: 75%;
   margin: 0 auto;
   font-weight: 500px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   color: hsl(0, 0%, 75%);
@@ -58,34 +70,27 @@ header {
 .headerLeftContainer, .headerRightContainer {
   display: flex;
   align-items:center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .headerLeftContainer{
-  width:35%;
+  
+  width:450px;
 }
 .headerRightContainer {
-  width:20%;
+  width:180px;
 }
 
 /* LANDING */
-h1{
-  font-size:78px;
-  line-height: 6rem;
-  color:rgb(52, 49, 58);
-}
-h2{
-  font-size:30px;
-  margin-top:100px;
-}
+
 
 .landing{
   display:flex;
   align-items: center;
   height:600px;
   text-align:left;
-  width: 1440px;
+  width: 75%;
 }
-.landing button{
+.getStartedBtn{
   font-size:18px;
   width:180px;
   height:50px;
@@ -103,14 +108,19 @@ h2{
 }
 
 /* INPUT BAR */
+
 .inputBar{
-  width:1440px;
+  width:75%;
   background-color: #3B3054;
   height:150px;
   border-radius:10px;
-  margin:auto;
-  position:relative;
-  overflow:hidden;
+  background-image: url('../images/bg-shorten-desktop.svg');
+  background-size: cover;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 .inputBarInner{
   display:flex;
@@ -124,7 +134,7 @@ h2{
 }
 .inputBarInner input{
   height:55px;
-  width:1050px;
+  width:70%;
   margin-right:15px;
   border-radius:10px;
   border:none;
@@ -153,7 +163,71 @@ h2{
 
 .statistics{
   background-color: #f0f1f6;
+  padding-top:100px;
+  margin-top:73px;
+}
+.statisticsAnotation{
+  width:25%;
+  margin:40px auto;
+}
+.cardContainer{
+  position: relative;
+  flex-wrap: wrap;
+  margin-top:50px;
+  display: flex;
+  margin:auto;
+  justify-content: space-between;
+  width:75%;
+  height:350px;
+  padding-bottom:100px;
+}
+hr{
+  position: absolute;
+  background-color:hsl(180, 66%, 49%);
+  height:8px;
+  width:100%;
+  top:30%;
+  border:none;
+}
+.card{
+  z-index: 2;
+  position: relative;
+  background-color:white;
+  width:280px;
+  height:200px;
+  border-radius:7px;
+  padding:30px 30px;
+  text-align: left;
+  line-height: 1.7rem;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.02);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.02);
+box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.02);
+  
+}
+.records{
+  align-self: center;
+}
+.customizable{
+  align-self: flex-end;
+}
+.cardIconContainer{
+  position: absolute;
+  top:-13%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:70px;
+  height:70px;
+  border-radius:50px;
+  background-color: #3B3054;
+}
+.cardText{
+  margin-top:30px;
+}
+.cardText p {
+  margin-top:10px;
+  font-weight:300;
 }
 
-
+/* BOOST LINKS */
 
