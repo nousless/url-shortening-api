@@ -52,9 +52,10 @@
         <!-- <img src="images/blobs/blobSimple.svg" class="simpleBlob" alt="blob">
         <img src="images/blobs/blobLong.svg" class="longBlob" alt="blob"> -->
         <div class="inputBarInner">
-          <input type="text" placeholder="Shorten a link here...">
-          <button>Shorten it!</button>
+          <input type="text" id="linkInput" placeholder="Shorten a link here...">
+          <button id="shortenButton" onclick=fetchURL() >Shorten it!</button>
         </div>
+        <div hidden id="spinner"></div>
       </div>
 
     <!-- advanced statistics -->
@@ -145,6 +146,7 @@
         </div>
       </div>
     </footer>
+    <script src="shortenURL.js"></script>
 
   </body>
 </html>
